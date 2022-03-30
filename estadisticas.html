@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Te lo Vendo - Estadística</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+          <a class="nav-link active" href="#">Estadisticas</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h1 class="text-center">Estadística</h1>
+      <div class="container-fluid">
+        <div class="row pt-5">
+          <div class="col-10 mx-auto">
+            <table id="tabla" class="display">
+              <thead>
+                <tr>
+                  <th>Productos</th>
+                  <th>Codigo</th>
+                  <th>Cantidad</th>
+                  <th>Valor</th>
+                  <th>Stock</th>
+                  <th>Valor Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Poleras</td>
+                  <td>#255</td>
+                  <td>1</td>
+                  <td>$3000</td>
+                  <td>4</td>
+                  <td>$3000</td>
+                </tr>
+                <tr>
+                  <td>Pantalon Hombre</td>
+                  <td>#256</td>
+                  <td>1</td>
+                  <td>$ 5000</td>
+                  <td>8</td>
+                  <td>$5000</td>
+                </tr>
+                <tr>
+                  <td>Pantalon Mujer</td>
+                  <td>#253</td>
+                  <td>2</td>
+                  <td>$ 6000</td>
+                  <td>9</td>
+                  <td>$12000</td>
+                </tr>
+                <tr>
+                  <td>Blusas</td>
+                  <td>#254</td>
+                  <td>1</td>
+                  <td>$2000</td>
+                  <td>2</td>
+                  <td>$4000</td>
+                </tr>
+                <tr>
+                  <td>Camisas</td>
+                  <td>#251</td>
+                  <td>3</td>
+                  <td>$3000</td>
+                  <td>6</td>
+                  <td>$9000</td>
+                </tr>
+                <tr>
+                  <td>Lavadoras</td>
+                  <td>#655</td>
+                  <td>1</td>
+                  <td>$50000</td>
+                  <td>2</td>
+                  <td>$50000</td>
+                </tr>
+                <tr>
+                  <td>microondas</td>
+                  <td>#656</td>
+                  <td>1</td>
+                  <td>$10000</td>
+                  <td>3</td>
+                  <td>$10000</td>
+                </tr>
+                <tr>
+                  <td>Refrigerador</td>
+                  <td>#653</td>
+                  <td>1</td>
+                  <td>$120000</td>
+                  <td>1</td>
+                  <td>$120000</td>
+                </tr>
+                <tr>
+                  <td>Barbies</td>
+                  <td>#783</td>
+                  <td>2</td>
+                  <td>$3000</td>
+                  <td>10</td>
+                  <td>$ 6000</td>
+                </tr>
+                <tr>
+                  <td>Peluches Grandes</td>
+                  <td>#787</td>
+                  <td>1</td>
+                  <td>$6500</td>
+                  <td>4</td>
+                  <td>$6500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-4 bg-light py-4">
+      <h6 class="text-center">
+        Gregory | Militza | Jose | Nicole ©2022 Grupo 5
+      </h6>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/funciones.js"></script>
+    <script>
+      $(() => {
+        $("#tabla").DataTable();
+      })
+    </script>
+  </body>
+</html>
